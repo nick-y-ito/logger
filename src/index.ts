@@ -1,7 +1,7 @@
-type Level = "Info" | "Warn";
+type Level = "Log" | "Info" | "Warn" | "Error";
 
 export class Logger {
-	private log(level: Level, ...message: any[]) {
+	private _log(level: Level, ...message: any[]) {
 		if (message) {
 			console.log(`[${level}]`, ...message);
 		} else {
@@ -9,11 +9,19 @@ export class Logger {
 		}
 	}
 
+	log(...message: any[]) {
+		this._log("Log", ...message);
+	}
+
 	info(...message: any[]) {
-		this.log("Info", ...message);
+		this._log("Info", ...message);
 	}
 
 	warn(...message: any[]) {
-		this.log("Warn", ...message);
+		this._log("Warn", ...message);
+	}
+
+	error(...message: any[]) {
+		this._log("Error", ...message);
 	}
 }

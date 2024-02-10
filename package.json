@@ -1,25 +1,32 @@
 {
-  "name": "@nick-y-ito/logger",
-  "version": "0.2.1",
-  "description": "",
-  "main": "src/index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nick-y-ito/logger.git"
-  },
-  "keywords": [
-    "log",
-    "logger",
-    "logging"
-  ],
-  "author": "nick-y-ito",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nick-y-ito/logger/issues"
-  },
-  "homepage": "https://github.com/nick-y-ito/logger#readme"
+	"name": "nick-y-ito-logger-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"./dist"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nick-y-ito/logger.git"
+	},
+	"keywords": [
+		"log",
+		"logger",
+		"logging"
+	],
+	"author": "nick-y-ito",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nick-y-ito/logger/issues"
+	},
+	"homepage": "https://github.com/nick-y-ito/logger#readme",
+	"devDependencies": {
+		"typescript": "^5.3.3"
+	}
 }

@@ -10,4 +10,8 @@ export class Logger {
 	info(...message) {
 		this.#log("Info", ...message);
 	}
+
+	warn(...message) {
+		this.#log("Warn", ...message);
+	}
 }
